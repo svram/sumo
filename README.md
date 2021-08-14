@@ -23,7 +23,7 @@ The amount raised and number of supported is fetched by scraping the Milaap Camp
         #instantiate soup object
         soup = BeautifulSoup(html, 'html.parser')
         
-        #extract thge amount
+        #extract the amount
         mydivs = soup.find_all("div", {"class": "amount"})
         amount = mydivs[0].text
         amount = "".join(amount.split())
